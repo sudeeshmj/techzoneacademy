@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="header"  id="index_header" >
+    <nav>
+       <a href="index.html"><img src="images/logo.png" alt="logo" height="120px"></a>
+       <div class="nav-links" id="navlinks" >
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+       
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="course.html">COURSE</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+           </ul>
+          
+       </div>
+      
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class ="text-box">
+        <h1>World's Biggest University</h1>
+     
+        <p>Making website is now easiest thing in the world.You just need to learn HTML,CSS, <br>Javascript  and you are good to go</p>
+        <a href="#course" class="hero-btn">Visit US TO Know More</a>
+    </div>
+</section>
+
+<!----Course----->
+<section class="course" id="course">
+
+<h1>Course We Offer</h1>
+<p>“ Well-designed Courses.. Online Live Classes.. 100% Job Oriented Training..<br> by Expert Level Professionals "</p>
+<div class="row">
+    <div class="course-col">
+        <h3>Web Design/Development</h3>
+        <img src="images/webdesign1.jpg" alt="webdesign" class = "course-img" width="250" height="250">
+        <h4>Course Duration : 3 Month</h4>
+        <p>This is a professional level online web designing course. This Online Web design Course is for people with passion in designing and dreaming for a better career in Web designing</p>
+    </div>
+    <div class="course-col">
+        <h3>Wordpress Development</h3>
+        <img src="images/webdeisgn2.jpg" alt="wordpress" class = "course-img" width="250" height="250">
+        <h4>Course Duration : 3 Month</h4>
+        <p>This is an expert level online web designing course. This course is designed to create expert level Web Designers / Web Professionals.</p>
+    </div>
+    <div class="course-col">
+        <h3>Graphic Design</h3>
+        <img src="images/webdesign3.jpg" alt="graphics" class = "course-img" width="250" height="250">
+        <h4>Course Duration : 3 Month</h4>
+        <p>This is an expert level Online Web Development course. The course includes advanced level of web designing, web development as well as the required technologies associated with it.</p>
+    </div>
+
+
+
+
+</div>
+
+
+</section>
+<section class="join-withus">
+    <div class="join-cntnt">
+        <h1>Start building your </br>Dream Career</h1>
+        <p class="join-para">We have been in the industry for more than 15 years. To excel in the field, it requires creative skill and technical knowledge. Our well-designed online web courses and expert training will serve the purpose. If you are dreaming high for a better career as a Web Designer, web developer, Graphic Designer or a WordPress Developer, we are here to help you fulfill the same.</p>
+        <a href="contact.html#contact" class="btn-red">Contact Us</a>
+    </div>
+    <div class="join-imgdiv" >
+        <img src="images/join.png" class="join-image" alt="join" width="2500" height="1000">
+    </div>
+</section>
+
+<!--Footer-->
+<section class="footer">
+<h1>Follow us on</h1>
+<div class="followicon">
+<i class="fa fa-facebook" ></i>
+<i class="fa fa-twitter" ></i>
+<i class="fa fa-instagram" ></i>
+<i class="fa fa-linkedin" ></i>
+</div>
+<p>Made BY techzone</p>
+</section>
+
+<script>
+    var navlink=document.getElementById("navlinks");
+  
+    function showMenu(){
+       
+        navlink.style.right="0";
+      
+       
+    }
+    function hideMenu(){
+        navlink.style.right="-200px";
+      
+    }
+    
+    </script>
+</body>
+</html>
